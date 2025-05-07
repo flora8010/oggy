@@ -180,3 +180,24 @@ app.listen(4000,()=>{
     console.log("Server is Started");
 })
 -->
+
+<!------===============================================================--->
+<!----uploading on aws:
+
+for opening vm on localhost: ssh -i "C:/Users/pratiksha sathe/Downloads/app_key.pem" ubuntu@13.60.218.255
+
+commands on aws
+
+sudo apt update
+sudo apt install -y nodejs npm
+npm-v
+node-v
+
+/*  scp -i "C:\Users\pratiksha sathe\Downloads\app_key.pem" -r "D:\Study\Engineering\Sixth sem\WAD\New folder\nodejs_practical" ubuntu@13.60.218.255:/home/ubuntu/index.js   */
+
+
+cd nodejs_practical
+
+node index.js
+--->
+

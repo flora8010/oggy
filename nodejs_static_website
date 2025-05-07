@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .sidebar {
+      width: 240px;
+      background-color: #212529;
+      color: white;
+      height: 100vh;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #343a40;
+    }
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .table-section {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h4 class="text-center">College Admin</h4>
+    <a href="#">Dashboard</a>
+    <a href="#">Students</a>
+    <a href="#">Courses</a>
+    <a href="#">Faculty</a>
+    <a href="#">Exams</a>
+    <a href="#">Timetable</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Welcome, Admin</h2>
+    <p class="text-muted">Overview of the college management system</p>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card text-bg-primary">
+          <div class="card-body">
+            <h5 class="card-title">Total Students</h5>
+            <p class="card-text fs-4">2,400</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-bg-success">
+          <div class="card-body">
+            <h5 class="card-title">Courses Offered</h5>
+            <p class="card-text fs-4">32</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-bg-warning">
+          <div class="card-body">
+            <h5 class="card-title">Faculty Members</h5>
+            <p class="card-text fs-4">115</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-bg-danger">
+          <div class="card-body">
+            <h5 class="card-title">Upcoming Exams</h5>
+            <p class="card-text fs-4">8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Topper Student Table -->
+    <div class="table-section">
+      <h4>Topper Student List</h4>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Roll No</th>
+              <th>Department</th>
+              <th>CGPA</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Aarya Deshmukh</td>
+              <td>CS202101</td>
+              <td>Computer Science</td>
+              <td>9.8</td>
+              <td>Final</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Rahul Sharma</td>
+              <td>EC202104</td>
+              <td>Electronics</td>
+              <td>9.6</td>
+              <td>Final</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Neha Patil</td>
+              <td>ME202105</td>
+              <td>Mechanical</td>
+              <td>9.5</td>
+              <td>Third</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Soham Kale</td>
+              <td>CE202110</td>
+              <td>Civil</td>
+              <td>9.4</td>
+              <td>Third</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
+
+
+
+
+<!--=========================================================-->
+<!--commands
+
+npm init
+
+npm install express --save
+
+node index.js
+
+-->
+
+
+
+<!--=========================================================-->
+<!----index.js-->
+
+<!--
+const express = require('express');
+const app=express();
+app.use(express.static('public'));
+app.listen(4000,()=>{
+    console.log("Server is Started");
+})
+-->

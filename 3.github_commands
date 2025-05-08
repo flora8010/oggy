@@ -1,0 +1,21 @@
+$ git --version
+
+$ git config --global user.name "PratikshaSathe08"
+git config --global user.email "pratikshasathe9689@gmail.com"
+
+
+$ mkdir app
+$ cd app
+$ echo "<h1>Hello World</h1>" >index.html
+
+$ git init
+
+$ git add .
+
+$ git commit -m "Initial commit-app"
+
+$ git remote add origin https://github.com/PratikshaSathe08/practice
+
+$ git push -u origin master
+
+$ git push origin main

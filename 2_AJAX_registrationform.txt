@@ -362,3 +362,50 @@ a:hover {
 }
 
 -->
+
+<!----==================================================================-->
+
+<!--
+go to website:  https://portal.cloud.hashicorp.com/vagrant/discover
+
+find ubuntu focal64
+
+================================================================
+
+config.vm.network "private_network", ip: "192.168.56.33"
+
+config.vm.network "public_network"
+
+config.vm.provider "virtualbox" do |vb|
+
+vb.memory = "1800"
+  end
+
+======================================================
+commands on gitbash:
+
+vagrant up
+vagrant ssh
+
+set vm network to bridged ntework
+
+ip a
+
+on localhost: scp -r "path" ubuntu@<ip>:/home/ubuntu/
+
+on vm:
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+
+ip a
+
+sudo ufw status
+sudo ufw allow 8000
+
+python3 -m http.server 8000
+
+go on browser: http://localhost:8000/dashboard.html
+
+--->
+

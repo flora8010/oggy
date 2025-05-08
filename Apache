@@ -1,0 +1,16 @@
+Apache server on aws
+
+create ec2 instance
+
+sudo apt update
+sudo apt install apache2
+
+sudo systemctl status apache2
+
+cd /var/www/html
+ll
+
+rm index.html
+vi index.html
+
+run the public ip

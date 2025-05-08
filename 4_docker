@@ -1,0 +1,22 @@
+sudo apt -get update
+  sudo apt install docker
+
+  sudo usermod -aG docker #USER
+  docker images
+  docker ps
+
+  docker run -it -d openjdk
+
+  docker ps
+
+  docker exec -it <c_id> <name>(jshell)
+
+  docker stop <c_id>
+
+  =================
+  docker pull python
+  docker images
+
+  docker run -it python
+
+  

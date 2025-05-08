@@ -403,9 +403,10 @@ ip a
 sudo ufw status
 sudo ufw allow 8000
 
+cd folder
 python3 -m http.server 8000
 
-go on browser: http://localhost:8000/dashboard.html
+go on browser: http://localhost:8000/
 
 --->
 

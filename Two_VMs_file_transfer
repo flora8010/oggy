@@ -1,0 +1,29 @@
+ctrl +h =>NAT network
+
+create 2 vms =>nat network
+====================================
+vm1
+
+ifconfig
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+
+ls
+touch abc.txt
+nano abc.txt
+
+scp abc.txt ubuntu@<ip>:/home/ubuntu/
+
+password change : sudo passwd ubuntu
+==========================================
+vm2
+
+ ifconfig
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+
+ls
+
+
